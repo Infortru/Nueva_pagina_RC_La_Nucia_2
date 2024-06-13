@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<!--Esta es la nueva página para RC La Nucía-->
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="Imágenes/favicon.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.20">
+		<meta name="description" content="Club de radiocontrol">
+		<meta name="word" content="RC, Club, La Nucía, radiocontrol">
+        <title>Nueva página para RC La Nucía</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <script type="text/javascript" src="JSRelojNuevaRC.js"></script>
+        <script type="text/javascript" src="JSVisor.js"></script>
+        
+    </head>
+
+    <body>
+        <header class="cabecera">
+            <img class="logotipoNegro" src="Imágenes/logotiponegro.png" alt="Logotipo RC La Nucía">
+            <!--Menú principal-->
+            <nav class="menu">
+                <ul>
+                    <li class="item"><a href="index.html"><img src="Imágenes/iconoHome.png" class="iconos"> Inicio</a></li>
+                    <li class="item"><a href="informacion.html"><img src="Imágenes/iconoInfo.png" class="iconos"> + Info</a></li>
+                    <li class="item"><a href="contacto.html"><img src="Imágenes/iconoContacto.png" class="iconos"> Contacto</a></li>
+                    <li class="item"><a href="tutoriales"><img src="Imágenes/iconoTutorial.png"  class="iconos"> Tutoriales</a></li>
+                </ul>
+            </nav>
+            <!--Este menú es para móviles-->
+            
+            <button id="boton-hamburguesa">
+                <span>&#9776</span> Menú
+            </button>
+            <nav class="menu-hamburguesa">
+                <ul>
+                    <li class="item"><a href="informacion.html">+ Info</a></li>
+                    <li class="item"><a href="contacto.html">Contacto</a></li>
+                    <li class="item"><a href="galeria.html">Galería</a></li>
+                    <li class="item"><a href="tutoriales.html">Tutoriales</a></li>
+                </ul>
+            </nav>
+            <script type="text/javascript" src="JSMenu.js"></script>
+        </header>
+        <main>
+            <h3>Selecciona una imagen para verla</h3>
+            <img class="galeria" src='Imágenes/foto1.jpg' alt='1. India - Agra - El Taj Majal.' name='fotos1' onclick="mifoto(1)"/>
+            <img class="galeria" src='Imágenes/foto2.jpg' alt='2. Albania - Region de Ballsh.' name='fotos2' onclick="mifoto(2)"/>
+            <img class="galeria" src='Imágenes/foto3.jpg' alt='3. Atenas- Partenón.' name='fotos3' onclick="mifoto(3)"/>
+            <img class="galeria" src='Imágenes/foto4.jpg' alt='4. Bélgica - Amberes.' name='fotos4' onclick="mifoto(4)"/>
+            <img class="galeria" src='Imágenes/foto5.jpg' alt='5. Costa Rica - Parque nacional de la Amistad.' name='fotos5' onclick="mifoto(5)"/>
+            <img class="galeria" src='Imágenes/foto6.jpg' alt='6. Egipto - Templo de Abu Simbel.' name='fotos6' onclick="mifoto(6)"/>
+            <img class="galeria" src='Imágenes/foto7.jpg' alt='7. España - Albacete ciudad.' name='fotos7' onclick="mifoto(7)"/>
+            <img class="galeria" src='Imágenes/foto8.jpg' alt='8. España - Tarragona - Acueducto romano.' name='fotos8' onclick="mifoto(8)"/>
+            <img class="galeria" src='Imágenes/foto1.jpg' alt='1. India - Agra - El Taj Majal.' name='fotos1' onclick="mifoto(1)"/>
+            <img class="galeria" src='Imágenes/foto2.jpg' alt='2. Albania - Region de Ballsh.' name='fotos2' onclick="mifoto(2)"/>
+            <img class="galeria" src='Imágenes/foto3.jpg' alt='3. Atenas- Partenón.' name='fotos3' onclick="mifoto(3)"/>
+            <img class="galeria" src='Imágenes/foto4.jpg' alt='4. Bélgica - Amberes.' name='fotos4' onclick="mifoto(4)"/>
+            <img class="galeria" src='Imágenes/foto5.jpg' alt='5. Costa Rica - Parque nacional de la Amistad.' name='fotos5' onclick="mifoto(5)"/>
+            <img class="galeria" src='Imágenes/foto6.jpg' alt='6. Egipto - Templo de Abu Simbel.' name='fotos6' onclick="mifoto(6)"/>
+            <img class="galeria" src='Imágenes/foto7.jpg' alt='7. España - Albacete ciudad.' name='fotos7' onclick="mifoto(7)"/>
+            <img class="galeria" src='Imágenes/foto8.jpg' alt='8. España - Tarragona - Acueducto romano.' name='fotos8' onclick="mifoto(8)"/>
+            <br><br>
+            <img class="foto" src="Imágenes/foto1.jpg" alt="1. India - Agra - El Taj Majal." name="fotoVisor"/>
+            <div id="titulo">1. India - Agra - El Taj Majal. </div>
+        </main>  
+        <aside>
+            <ul class="time">
+                <li id="fecha"></li>
+                <li id="reloj"></li>
+            </ul>
+            
+        </aside>
+        <footer>
+            <div class="izquierda pie">
+                email:<a href="mailto:info@rcnucia.com?subject=información">info@rcnucia.com</a><br/>
+                &copy Club RC La Nucía 2023<br/>
+                <a href="aviso.html">Aviso legal</a><br/>
+            </div>
+            <div class="centro pie">
+                Club RC La Nucía<br/>
+                Pda. La Muixara<br/>
+                <a href="https://www.ciudaddeportivacamilocano.com" target="_blank">Ciudad Deportiva Camilo Cano</a><br/>
+                03530 La Nucía (Alicante)<br/>
+            </div>
+            <div class="derecha pie">
+                Webmaster:<a href="mailto:ramontrujillo@rcnucia.com">ramontrujillo@rcnucia.com</a><br/>
+            </div>
+        </footer>     
+    </body>
+</html>
+
+
+
+
+        </main>

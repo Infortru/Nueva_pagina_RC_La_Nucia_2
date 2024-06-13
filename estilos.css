@@ -1,0 +1,96 @@
+/*Archivo de estilos*/
+@import "estilosPC.css" screen and (min-width: 1170px);
+@import "estilosTablet.css" screen and (min-width:900px) and (max-width: 1169px);
+@import "estilosPDA.css" screen and (min-width:580px) and (max-width: 899px);
+@import "estilosMovil.css" screen and (max-width: 579px);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --colorCabecera: #AAAABB;
+    --colorFondo: #CCCCDD;
+    --colorEnlaces: #aa17a3;
+    --colorHover: #dd4Ad4;
+    --colorMenuH: #888899;
+    --colorBotonH: #777788;
+    --colorH1: rgba(255, 0, 0, 0.623);
+    --colorAside: #BBBBCC;
+}
+form {
+    font-family: roboto, sans-serif;
+    background-color: #BBBBEE;
+    width: 25rem;
+    display: grid;
+    grid-template-columns: 8.5rem 1fr;
+    margin: 1rem;
+    font-size: 1.3rem;
+    border: .2rem solid #9999CC;
+    border-radius: 5px;
+}
+label {
+    text-align: left;
+    grid-column: 1/2;
+    margin: 1rem 0 0 1.2rem;
+}
+.texto {
+    margin-left: -3rem;
+    text-align: center;
+}
+input, textarea {
+    grid-column: 2/3;
+    margin: 1rem 1.3rem 0 0;
+    border: none;
+    border-radius: 0.25rem;
+}
+.doble {
+    grid-column: 1 / 3;
+    margin-left: 1.3rem;
+}
+.boton {
+    background-color: #9999CC;
+    padding: .6rem 0;
+    margin: 1.3rem 1.3rem .5rem 1.3rem;
+    font-size: 1rem;
+    color: yellow;
+    border: none;
+    border-radius: 2rem;
+}
+.boton:disabled {
+    color: blue;
+}
+input:focus, textarea:focus, .boton:hover {
+    outline: .15rem solid #9999CC;
+}
+.izquierda {
+    grid-column: 1/2;
+    outline: none;
+}
+.izquierda:focus {
+    outline: none;
+}
+.limpiar {
+    margin-bottom: 1.5rem;
+}
+.doble > img{
+    width: 30%;
+    height: 10rem;
+    margin: 10px 35%;
+}
+.doble > p, .doble > label {
+    font-size: 90%;
+}
+.rojo {
+    color: red;
+}
+.amarillo {
+    color: yellow;
+}
+.verde {
+    color: green;
+}
+.radio {
+    margin: .3rem;
+}

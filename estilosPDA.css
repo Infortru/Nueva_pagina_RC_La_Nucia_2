@@ -1,0 +1,121 @@
+/*Estilos para PDA de la nueva página para el Club RC La Nucía*/
+
+body {
+    display: grid;
+    grid-template-columns: 5fr, 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    background-color: var(--colorFondo);
+    grid-gap: 0rem;
+}
+.cabecera {
+    grid-column: 1/6;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    background-color: var(--colorCabecera);
+    height: 200px;
+}
+.logotipoNegro {
+    width: 11rem;
+    grid-column: 1;
+    padding: 1.5rem;
+}
+.menu {
+    display: none;
+}
+.menu-hamburguesa {
+    grid-column: 2;
+    grid-row: 2;
+    display: none;
+    margin: 3rem 10rem 0 auto; 
+}
+.menu-hamburguesa li:last-child {
+    border-radius: 0 0 15px 15px;
+    border: none;
+}
+.menu-hamburguesa li{
+    list-style: none;
+    font-size: 1.2rem;
+    background-color: var(--colorMenuH);
+    padding: .6rem 28px;
+    border-bottom: 1px solid black;
+}
+.menu-hamburguesa a {
+    text-decoration: none;
+    color: black;
+}
+#boton-hamburguesa {
+    background-color: var(--colorBotonH);
+    color: #DDDDDD;
+    width: 8.8rem;
+    height: 6rem;
+    font-size: 1.6rem;
+    margin: 1rem 10rem 0 auto;
+    grid-column: 2;
+    grid-row: 1;
+    display: block;
+    border-radius: 15px 15px 0 0;
+    border: none;
+}
+main {
+    grid-column: 1/5;
+    grid-row: 2;
+    text-indent: 20px;
+    margin-left: 1rem;
+    word-wrap: break-word;
+}
+main h1 {
+    text-align: center;
+    color: var(--colorH1);
+    padding: 4rem 0;
+}
+.galeria {
+    width: 4rem;
+}
+.foto {
+    width: 55%;
+    margin: 5rem auto 0 7rem;
+    border: 1px solid black;
+}
+#titulo {
+    text-align: center;
+}
+aside {
+    grid-column: 5;
+    grid-row: 2;
+    background-color: var(--colorFondo);
+    word-wrap: break-word;
+}
+h3 {
+    text-align: center;
+    margin: 2rem auto;
+}
+.mapa {
+    border-radius: 1rem;
+    width: 10rem;
+}
+.time {
+    margin-top: 3rem;
+    list-style: none;
+    font-weight: 600;
+    text-align: center;
+}
+footer {
+    grid-column: 1/6;
+    grid-row: 3;
+    background-color: var(--colorCabecera);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    font-size: 0.8rem;
+    height: 200px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--colorEnlaces);
+}
+.derecha {
+    text-align: center;
+    margin: -5rem auto 0 1rem;
+}

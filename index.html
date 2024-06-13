@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<!--Esta es la nueva página para RC La Nucía-->
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="Imágenes/favicon.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.20">
+		<meta name="description" content="Club de radiocontrol">
+		<meta name="word" content="RC, Club, La Nucía, radiocontrol">
+        <title>Nueva página para RC La Nucía</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <script type="text/javascript" src="JSRelojNuevaRC.js"></script>
+        
+    </head>
+
+    <body>
+        <header class="cabecera">
+            <img class="logotipoNegro" src="Imágenes/logotiponegro.png" alt="Logotipo RC La Nucía">
+            <!--Menú principal-->
+            <nav class="menu">
+                <ul>
+                    <li class="item"><a href="informacion.html"><img src="Imágenes/iconoInfo.png" class="iconos"> + Info</a></li>
+                    <li class="item"><a href="contacto.html"><img src="Imágenes/iconoContacto.png" class="iconos"> Contacto</a></li>
+                    <li class="item"><a href="galeria.html"><img src="Imágenes/iconoGaleria.png" class="iconos"> Galería</a></li>
+                    <li class="item"><a href="tutoriales.html"><img src="Imágenes/iconoTutorial.png"  class="iconos"> Tutoriales</a></li>
+                </ul>
+            </nav>
+            <!--Este menú es para móviles-->
+            
+            <button id="boton-hamburguesa">
+                <span>&#9776</span> Menú
+            </button>
+            <nav class="menu-hamburguesa">
+                <ul>
+                    <li class="item"><a href="informacion.html">+ Info</a></li>
+                    <li class="item"><a href="contacto.html">Contacto</a></li>
+                    <li class="item"><a href="galeria.html">Galería</a></li>
+                    <li class="item"><a href="tutoriales">Tutoriales</a></li>
+                </ul>
+            </nav>
+            <script type="text/javascript" src="JSMenu.js"></script>
+        </header>
+        <main>
+            <article>
+                <h1>Presentación</h1>
+            <p>El Club RC La Nucía fue fundado en 2010, desde entonces no ha parado de evolucionar y crecer
+                    En 2023 debido a la remodelación de La Ciudad Deportiva Camilo Cano el Ayuntamiento nos ha
+                    cambiado la ubicación.
+            </p><br>
+            <p>Después de este paréntesis por el traslado volvemos con energias renovadas y queremos queremos
+                que formes parte de esta gran familia que es <strong>El Club RC La Nucía</strong>. ¿Por que
+                es una una gran familia? Porque en el <strong>Club RC La Nucía</strong> prima el respeto,
+                la cordialidad y nadie es más que nadie.
+            </p><br>
+            <p>En este Club los más veteranos nos esforzamos por enseñar a los nuevos socios a como mantener y
+                pilotar sus automodelos. Tambíen les aconsejamos sobre que modelos son los mejores y tiendas
+                en las cuales adquirirlos, los repuestos y herramientas necesarias para la reparación y mantenimiento
+                de su coche.
+            </p><br>
+            <img class="circuito" src="Imágenes/CircuitoAire.jpg" alt="Circuito desde el aire" width="80%">
+            </article>  
+            <script>
+                document.write(window.innerWidth);
+                
+                
+            </script>
+
+        </main>
+        <aside>
+            <ul class="time">
+                <li id="fecha"></li>
+                <li id="reloj"></li>
+            </ul>        
+        </aside>
+        <footer>
+            <div class="izquierda pie">
+                email:<a href="mailto:info@rcnucia.com?subject=información">info@rcnucia.com</a><br/>
+                &copy Club RC La Nucía 2023<br/>
+                <a href="aviso.html">Aviso legal</a><br/>
+            </div>
+            <div class="centro pie">
+                Club RC La Nucía<br/>
+                Pda. La Muixara<br/>
+                <a href="https://www.ciudaddeportivacamilocano.com" target="_blank">Ciudad Deportiva Camilo Cano</a><br/>
+                03530 La Nucía (Alicante)<br/>
+            </div>
+            <div class="derecha pie">
+                Webmaster:<a href="mailto:ramontrujillo@rcnucia.com">ramontrujillo@rcnucia.com</a><br/>
+            </div>
+        </footer>     
+    </body>
+</html>
+

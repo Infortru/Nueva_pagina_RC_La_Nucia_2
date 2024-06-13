@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<!--Esta es la nueva página para RC La Nucía-->
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="Imágenes/favicon.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.20">
+		<meta name="description" content="Club de radiocontrol">
+		<meta name="word" content="RC, Club, La Nucía, radiocontrol">
+        <title>Nueva página para RC La Nucía</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <script type="text/javascript" src="JSRelojNuevaRC.js"></script>
+        <script type="text/javascript" src="tiempo.js"></script>
+        
+    </head>
+
+    <body>
+        <header class="cabecera">
+            <img class="logotipoNegro" src="Imágenes/logotiponegro.png" alt="Logotipo RC La Nucía">
+            <!--Menú principal-->
+            <nav class="menu">
+                <ul>
+                    <li class="item"><a href="index.html"><img src="Imágenes/iconoHome.png" class="iconos"> Inicio</a></li>
+                    <li class="item"><a href="contacto.html"><img src="Imágenes/iconoContacto.png" class="iconos"> Contacto</a></li>
+                    <li class="item"><a href="galeria.html"><img src="Imágenes/iconoGaleria.png" class="iconos"> Galería</a></li>
+                    <li class="item"><a href="tutoriales"><img src="Imágenes/iconoTutorial.png"  class="iconos"> Tutoriales</a></li>
+                </ul>
+            </nav>
+            <!--Este menú es para móviles-->
+            
+            <button id="boton-hamburguesa">
+                <span>&#9776</span> Menú
+            </button>
+            <nav class="menu-hamburguesa">
+                <ul>
+                    <li class="item"><a href="index.html">Inicio</a></li>
+                    <li class="item"><a href="contacto.html">Contacto</a></li>
+                    <li class="item"><a href="galeria.html">Galería</a></li>
+                    <li class="item"><a href="tutoriales.html">Tutoriales</a></li>
+                </ul>
+            </nav>
+            <script type="text/javascript" src="JSMenu.js"></script>
+        </header>
+        <main>
+            <article>
+                <p>El <strong>Club RC La Nucía</strong> es un club de radiocontrol
+                    sin ánimo de lucro formado por aficionados a este hobby, la cantidad
+                    pagada en las cuotas se utiliza para realizar mejoras en las 
+                    instalaciones. El circuito se encuentra ubicado en la <a href="https://www.ciudaddeportivacamilocano.com" target="_blank" title="Ver página de La Ciudad Deportiva Camilo Cano">
+                    Ciudad Deportiva Camilo Cano</a> de La Nucía.
+                </p><br>
+                <p>
+                    <ul class="junta">Como en todos los clubs deportivos hay una junta directiva formada
+                        en este caso por:
+                        <li>El Presidente: José Luis Picon Linares.</li>
+                        <li>El Vicepresidente: Joan Espasa Bou.</li>
+                        <li>El Secretario/Tesorero: Ramón Trujillo Visuete.</li>
+                    </ul>
+                </p>
+            </article>
+            <article>
+                <p>El <strong>Club RC La Nucía</strong> tiene una serie de normas básicas
+                necesarias para un correcto funcionamiento del Club. 
+                    <ol class="normas">
+                        <li>La primera y más importante es el <strong>respeto hacía los otros soci@s</strong></li>
+                        <li><strong>Respeto por las instalaciones y material</strong> puesto a disposición de los soci@s del circuito</li>
+                        <li>Está <strong>terminantemente prohibido</strong> el consumo de sustancias estupefaciente, fumar y consumir alcohol en las instalaciones</li>
+                        <li>Para rodar es obligatorio estar en posesión de la licencia de <strong><a href="https://aecar.org/sol_licencia.php" target="_blank" title="Abre página de AECAR para solicitar la licencia">
+                            <img src="Imágenes/AECARRojo.jpg" class="aecar"></a></strong></li>
+                        <li>L@s soci@s son <strong>responsables de los daños</strong> que produzcan al circuito o a otros soci@s</li>
+                        <li><strong>El incumplimiento reiterado de alguna de estas normas será motivo suficiente para la expulsión del Club RC La Nucía</strong></li>
+                    </ol>
+                </p>
+            </article>
+        </main>
+        <aside>
+            <ul class="time">
+                <li id="fecha"></li>
+                <li id="reloj"></li>
+            </ul>
+            <h3>¿Donde estamos?</h3>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.9886498010374!2d-0.1252274853000754!3d38.603131471841934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd620319a6b11295%3A0xe1f73cc9e96be3b6!2sRC%20La%20Nuc%C3%ADa!5e0!3m2!1ses!2ses!4v1680451399665!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </aside>
+        <footer>
+            <div class="izquierda pie">
+                email:<a href="mailto:info@rcnucia.com?subject=información">info@rcnucia.com</a><br/>
+                &copy Club RC La Nucía 2023<br/>
+                <a href="aviso.html">Aviso legal</a><br/>
+            </div>
+            <div class="centro pie">
+                Club RC La Nucía<br/>
+                Pda. La Muixara<br/>
+                <a href="https://www.ciudaddeportivacamilocano.com" target="_blank">Ciudad Deportiva Camilo Cano</a><br/>
+                03530 La Nucía (Alicante)<br/>
+            </div>
+            <div class="derecha pie">
+                Webmaster:<a href="mailto:ramontrujillo@rcnucia.com">ramontrujillo@rcnucia.com</a><br/>
+            </div>
+        </footer>      
+    </body>
+</html>

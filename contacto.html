@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<!--Esta es la nueva página para RC La Nucía-->
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="Imágenes/favicon.ico" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.20">
+		<meta name="description" content="Club de radiocontrol">
+		<meta name="word" content="RC, Club, La Nucía, radiocontrol">
+        <title>Nueva página para RC La Nucía</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <script type="text/javascript" src="JSRelojNuevaRC.js"></script>
+    </head>
+
+    <body>
+        <header class="cabecera">
+            <img class="logotipoNegro" src="Imágenes/logotiponegro.png" alt="Logotipo RC La Nucía">
+            <!--Menú principal-->
+            <nav class="menu">
+                <ul>
+                    <li class="item"><a href="index.html"><img src="Imágenes/iconoHome.png" class="iconos"> Inicio</a></li>
+                    <li class="item"><a href="informacion.html"><img src="Imágenes/iconoInfo.png" class="iconos"> + Info</a></li>
+                    <li class="item"><a href="galeria.html"><img src="Imágenes/iconoGaleria.png" class="iconos"> Galería</a></li>
+                    <li class="item"><a href="tutoriales"><img src="Imágenes/iconoTutorial.png"  class="iconos"> Tutoriales</a></li>
+                </ul>
+            </nav>
+            <!--Este menú es para móviles-->
+            
+            <button id="boton-hamburguesa">
+                <span>&#9776</span> Menú
+            </button>
+            <nav class="menu-hamburguesa">
+                <ul>
+                    <li class="item"><a href="index.html">
+                        Inicio</a></li>
+                    <li class="item"><a href="informacion.html">+ Info</a></li>
+                    <li class="item"><a href="contacto.html">Contacto</a></li>
+                    <li class="item"><a href="galeria.html">Galería</a></li>
+                    <li class="item"><a href="tutoriales.html">Tutoriales</a></li>
+                </ul>
+            </nav>
+           
+        </header>
+        <main>
+            <p>Puedes ponerte en contacto con nosotros a través de:</p>
+            <ul class="contacto">
+                <li>E-mail:<a href="mailto:info@rcnucia.com?subject=Información">info@rcnucia.com</a></li><br/>
+                <li>Teléfono o whatsapp:</li>
+                <ul class="contacto datos"><br>
+                    <li>José Luis Picón:629 80 76 22</li>
+                    <li>Joan Espasa: 633 55 32 84</li>
+                    <li>Ramón Trujillo:639 79 26 19</li>
+                </ul>
+                <li>Puedes visitar nuestra página de <a href="http://facebook.com/Club-RC-La-Nucia-109917694919182" target="_blank">
+                    <img src="Imágenes/IconoFace2.png"></a></li><br/>
+                <li>O rellenando el siguiente formulario de información:</li>
+            </ul>
+            <form action="recontacto.php" enctype="application/x-www-form-urlencoded" id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Email:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label class="doble coment" for="comentarios">Comentarios:</label>
+                <textarea class="doble" id="comentarios" cols="30" rows="4"></textarea>
+                <input type="checkbox" class="izquierda"  onclick="envio()">Acepto la política de privacidad.
+                <input type="submit" class="doble boton" value="Debes aceptar la política de privacidad" disabled> 
+                <input type="reset" class="doble boton limpiar" value="Limpiar"> 
+
+                <div id="division" hidden="true" class="doble">
+                    <p class="doble">Selecciona el color del semáforo:</p><br>
+                    <label class="rojo"><input type="radio" class="radio" name="seleccion" value="0" onchange="seleccionaColor(value)">Rojo</label>
+                    <label class="amarillo"><input type="radio" class="radio" name="seleccion" value="1" onchange="seleccionaColor(value)">Amarillo</label>
+                    <label class="verde"><input type="radio" class="radio" name="seleccion" value="2" onchange="seleccionaColor(value)">Verde</label><br>
+                  </div>
+            </form>
+
+            
+            <script type="text/javascript" src="JSMenu.js"></script>
+            <!--<script>
+                let button = document.querySelector(".izquierda");
+                function action() {
+                let boton = document.querySelector(".boton");
+                boton.setAttribute("value", "Enviar");
+                boton.removeAttribute("disabled");
+                };
+                button.addEventListener("click", action);
+            </script>-->
+        </main>
+        <aside>
+            <ul class="time">
+                <li id="fecha"></li>
+                <li id="reloj"></li>
+            </ul>       
+        </aside>
+        <footer>
+            <div class="izquierda pie">
+                email:<a href="mailto:info@rcnucia.com?subject=información">info@rcnucia.com</a><br/>
+                &copy Club RC La Nucía 2023<br/>
+                <a href="aviso.html">Aviso legal</a><br/>
+            </div>
+            <div class="centro pie">
+                Club RC La Nucía<br/>
+                Pda. La Muixara<br/>
+                <a href="https://www.ciudaddeportivacamilocano.com" target="_blank">Ciudad Deportiva Camilo Cano</a><br/>
+                03530 La Nucía (Alicante)<br/>
+            </div>
+            <div class="derecha pie">
+                Webmaster:<a href="mailto:ramontrujillo@rcnucia.com">ramontrujillo@rcnucia.com</a><br/>
+            </div>
+        </footer>     
+    </body>
+</html>

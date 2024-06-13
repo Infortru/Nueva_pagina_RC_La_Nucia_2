@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nueva página para RC La Nucía</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <script type="text/javascript" src="JSRelojNuevaRC.js">
+        </script>
+        <script>
+            function diferenciales(url) {
+                window.open(url, "ventanaDiferenciales", "width=600, height=1000, resizable=no, menubar=no, status=no");
+            }
+            function amortiguadores(url) {
+                window.open(url, "ventanaAmortiguadores", "width=600, height=1000, resizable=no, menubar=no");
+            }
+            function rodamientos(url) {
+                window.open(url, "ventanaRodamientos", "width=600, height=1000, resizable=no, menubar=no");
+            }
+        </script>
+        
+    </head>
+
+    <body>
+        <header>
+            <img id="logotipoNegro" src="Imágenes/logotiponegro.png">
+            <!--Menú de opciones-->
+            <ul id="menu">
+                <li id="inicio"><a href="index.html">Inicio</a></li>
+                <li><a href="informacion.html">+Info</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </header>
+        <!--área principal-->
+        <section>
+            <h1>Tutoriales</h1>
+            <p>Para el correcto funcionamiento de tu coche radiocontrolado, necesitas mantenerlo a punto, en esta
+                serie de tutoriales intentamos darte una serie de pautas y consejos de como hacerlo.
+            </p>
+            <p>En primer lugar debes saber las partes del coche que necesitan mantenimiento:</p>
+            <ul>
+                <li><strong onclick="amortiguadores('amortiguadores.html')" style="cursor:pointer">Amortiguadores: </strong>
+                    son los encargados de absorver las deformaciones del terreno y amortiguar la caida después de un salto.
+                    Estos están rellenos de aceite de silicona que necesita ser cambiada cada cierto tiempo.
+                </li>
+                <li><strong onclick="diferenciales('diferenciales.html')" style="cursor:pointer">Diferenciales: </strong>
+                    los coches están dotados de tres diferenciales; central, delantero y trasero. Al
+                    igual que los amortiguadores tienen siliconas que deben cambiarse cada cierto tiempo.
+                </li>
+                <li><strong onclick="rodamientos('rodamientos.html')" style="cursor:pointer">Rodamientos: </strong>
+                    todas las partes del coche que están sometidas a rozamientos y/o desgaste porque
+                    giran a un gran número de revoluciones como por ejemplo los palieres, transmisiones; disponen
+                    de rodamientos para evitar estos en los posible.
+                </li>
+                <li><b>Rótulas:</b> las podemos encontrar en partes del coche que unen distintas partes y tienen un cierto
+                    movimientos como por ejemplo la dirección, los trapecios superiores, varillaje de gas/freno.
+                </li>
+                <li><b>Embrague:</b> es el encargado de transmitir el giro del motor a las ruedas. Dispone de una serie
+                    de zapatas con muelles de forma que al ralentí no gira la campana con el piñon de ataque, al subir de 
+                    revoluciones estas por la fuerza centrífuga se abren y se cogen a la campana.
+                </li>
+                <li><b>Motor:</b> debemos controlar el estado de la bujía, que no tenga fugas, la compresión y mantenerlo limpio
+                    para evitar sobrecalentamientos.
+                </li>                    
+            </ul>
+            <h1>Set up</h1>
+            <p>También vamos a intentar explicarte que son los "set up" del coche para configurarlo y conseguir
+                las máximas prestaciones.
+            </p>
+        </section>
+        <!--Información interesante-->
+        <aside>
+            <ul>
+                <li id="fecha"></li>
+                <li id="reloj"></li>
+            </ul>
+            <ul>
+                <li>Si tienes un negocio relacionado con el radiocontrol,
+                    infórmate<a href="mailto:ramontrujillo@rcnucia.com" title="Enviar correo para solicitar información">aquí</a></li>
+            </ul>
+        </aside>
+            <!--Pie de página-->
+        <footer>
+            <div class="pieizquierda">
+                email:<a href="mailto:info@rcnucia.com?subject=información">info@rcnucia.com</a><br/>
+                &copy Club RC La Nucía 2023<br/>
+                <a href="aviso.html">Aviso legal</a><br/>
+            </div>
+            <div class="piecentro">
+                Club RC La Nucía<br/>
+                Pda. La Muixara<br/>
+                <a href="https://www.ciudaddeportivacamilocano.com" target="_blank">Ciudad Deportiva Camilo Cano</a><br/>
+                03530 La Nucía (Alicante)<br/>
+            </div>
+            <div class="piederecha">
+                Webmaster:<a href="mailto:ramontrujillo@rcnucia.com">ramontrujillo@rcnucia.com</a><br/>
+            </div>
+        </footer>
+    </body>
+</html>

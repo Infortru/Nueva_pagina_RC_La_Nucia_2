@@ -1,0 +1,77 @@
+/*Estilos para móviles*/
+
+header {
+    background-color: var(--colorCabecera);
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.logotipoNegro {
+    display: block;
+    width: 50%;
+    margin: 1rem auto 0 auto;
+}
+.menu {
+    display: none;
+}
+#boton-hamburguesa {
+    background-color: var(--colorBotonH);
+    color: #DDDDDD;
+    width: 45%;
+    height: 3rem;
+    font-size: 1.3rem;
+    margin: 1rem auto 0 auto;
+    display: block;
+    border-radius: 15px 15px 0 0;
+    border: none;
+}
+.menu-hamburguesa {
+    display: none;
+    margin: 0 auto 0 auto; 
+}
+.menu-hamburguesa li:last-child {
+    border-radius: 0 0 1rem 1rem;
+    border: none;
+}
+.menu-hamburguesa li{
+    list-style: none;
+    font-size: 1.1rem;
+    background-color: var(--colorMenuH);
+    padding: .6rem;
+    border-bottom: 1px solid black;
+    width: 40%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.menu-hamburguesa a {
+    text-decoration: none;
+    color: black;
+}
+main {
+    background-color: var(--colorFondo);
+    width: 100%;
+    padding: 0 .2rem 0 .5rem;
+}
+main h1 {
+    text-align: center;
+    color: var(--colorH1);
+    padding: 4rem 0;
+}
+.foto, #titulo, h3 {
+    display: none;
+}
+.galeria {
+    margin-top: 1rem;
+    width: 80%;
+}
+aside, .circuito {
+    display: none;
+}
+footer {
+    background-color: var(--colorCabecera);
+    text-align: center;;
+}
+footer a {
+    text-decoration: none;
+    color: var(--colorEnlaces);
+    width: 100%;
+}
